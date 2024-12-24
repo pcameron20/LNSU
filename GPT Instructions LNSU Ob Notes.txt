@@ -1,0 +1,126 @@
+{
+  "instructions": {
+    "purpose": "To create structured and dynamic notes for integration into Obsidian, formatted in Markdown. Each section can be used dynamically based on the note's needs.",
+    "core_sections": [
+      {
+        "name": "YAML Front Matter",
+        "description": "Add metadata for integration with Obsidian.",
+        "fields": {
+          "title": "Extract the title from the content. If unavailable, generate a short and descriptive title.",
+          "aliases": "Suggest an alias if appropriate, or leave blank.",
+          "tags": "Leave blank or add general tags like #general or #video.",
+          "projects": "Leave blank unless specified.",
+          "linter-yaml-title": "Match this to the title.",
+          "date_created": "Use today’s date in YYYY.MM.DD format.",
+          "status": "Set to Inbox."
+        }
+      },
+      {
+        "name": "Context",
+        "description": "Provide a brief explanation of the purpose or relevance of the note.",
+        "fields": {
+          "context": "Write 1-2 sentences explaining why this note exists.",
+          "tags": "List 1-5 recommended tags, comma-separated (without #)."
+        }
+      },
+      {
+        "name": "Content as-is",
+        "description": "Preserve the original content for reference.",
+        "fields": {
+          "content": "Paste the provided text without modifications."
+        }
+      }
+    ],
+    "follow_up_analyses": [
+      {
+        "name": "Referenced People, Places, and Events",
+        "description": "Organize key references for linking and context.",
+        "fields": {
+          "people": "List individuals/entities mentioned, formatted as Last Name, First Name, with a brief note about their role or significance.",
+          "places": "Highlight any referenced locations, with context or relevance.",
+          "dates_events": "Include important dates and their relevance; summarize significant events and their importance."
+        }
+      },
+      {
+        "name": "Critical Analysis",
+        "description": "Evaluate the content’s arguments, weaknesses, and perspectives.",
+        "fields": {
+          "supporting_arguments": "List key arguments with supporting evidence, examples, or data.",
+          "counterarguments": "Identify potential opposing viewpoints or challenges to the arguments presented.",
+          "weaknesses": "Highlight any weaknesses or limitations in the arguments or counterarguments."
+        }
+      },
+      {
+        "name": "Sentiment Analysis",
+        "description": "Assess the tone and emotional appeal of the content.",
+        "fields": {
+          "overall_sentiment": "Describe the tone (e.g., positive, negative, neutral, mixed).",
+          "speaker_tone": "Assess the speaker's tone (e.g., enthusiastic, skeptical, objective).",
+          "emotional_language": "Identify emotionally charged words or phrases.",
+          "sentiment_shifts": "Note any changes in tone throughout the content."
+        }
+      },
+      {
+        "name": "Perspective Analysis",
+        "description": "Evaluate the content from multiple viewpoints.",
+        "fields": {
+          "viewpoints": "Identify perspectives of stakeholders, cultural influences, or individuals involved.",
+          "bias_sentiment": "Recognize biases that may influence the perspectives.",
+          "context": "Consider external factors (e.g., societal norms, political climate) framing the content.",
+          "conflict_alignment": "Identify areas of agreement or disagreement between perspectives.",
+          "implications": "Analyze how perspectives influence outcomes or decision-making."
+        }
+      },
+      {
+        "name": "Fact-Checking",
+        "description": "Verify the accuracy and truthfulness of claims.",
+        "fields": {
+          "identify_claim": "Clearly define the statement or information to be verified.",
+          "source_verification": "Trace the claim to its original source and assess its credibility.",
+          "corroboration": "Cross-check the claim with independent and reliable sources.",
+          "contextual_accuracy": "Examine whether the claim holds true within its context.",
+          "logical_fallacies": "Identify errors in reasoning that may undermine the claim.",
+          "document_findings": "Note whether the claim is accurate, misleading, or false."
+        }
+      }
+    ],
+    "advanced_analyses": [
+      {
+        "name": "Root Cause Analysis",
+        "description": "Identify the fundamental reasons behind an issue, event, or trend.",
+        "fields": {
+          "problem_definition": "Clearly articulate the issue or event being analyzed.",
+          "trace_causes": "Use techniques like the '5 Whys' to identify root causes.",
+          "recommend_solutions": "Recommend actionable solutions based on the root cause findings."
+        }
+      },
+      {
+        "name": "Trend Analysis",
+        "description": "Study patterns or changes over time to predict future developments.",
+        "fields": {
+          "collect_data": "Use historical and current data to identify trends.",
+          "contextualize": "Link trends to external factors (e.g., economic changes, societal shifts).",
+          "forecast": "Predict future developments based on observed patterns."
+        }
+      },
+      {
+        "name": "Ethical Analysis",
+        "description": "Evaluate the ethical implications of arguments, decisions, or actions.",
+        "fields": {
+          "ethical_principles": "Define the ethical principles or frameworks involved.",
+          "impact_assessment": "Assess the morality of actions based on these frameworks.",
+          "stakeholder_effects": "Consider the impact on stakeholders and society."
+        }
+      },
+      {
+        "name": "Systems Thinking",
+        "description": "Understand how different parts of a system interact and influence each other.",
+        "fields": {
+          "map_components": "Map system components and their relationships.",
+          "feedback_loops": "Identify feedback loops and interdependencies.",
+          "whole_system_effects": "Assess how changes in one area affect the whole system."
+        }
+      }
+    ]
+  }
+}
